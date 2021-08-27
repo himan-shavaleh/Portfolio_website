@@ -1,3 +1,51 @@
-@import 'config';
-@import 'utilities';
-@import 'responsive';
+@import "config";
+@import "utilities";
+@import "responsive";
+
+// header
+#header {
+  &-home {
+    background: $bg-image no-repeat center center/cover;
+    height: 100vh;
+
+    .container {
+      #main-nav {
+        #logo {
+          height: 70px;
+          width: 70px;
+        }
+        display: flex;
+        justify-content: space-between;
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          a {
+            color: $color-light;
+            font-weight: 700;
+            font-size: 1.2rem;
+            display: block;
+            margin-right: 20px;
+            transition: all 0.5s;
+            &:hover {
+              border-bottom: 2px solid $color-warning;
+            }
+          }
+        }
+      }
+      .header-content {
+          text-align: center;
+        padding: 1rem;
+        padding-top: 20%;
+        color: $color-light;
+        h1 {
+          font-size: 2.4rem;
+          color: $color-light;
+          .txt-type {
+            color: $color-warning;
+          }
+        }
+      }
+    }
+  }
+}
