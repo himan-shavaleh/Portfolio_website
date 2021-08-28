@@ -1,44 +1,53 @@
 // fonts
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
 
 // color variables
-$color-warning:#ffbc00;
-$color-dark:#444;
-$color-light:#f4f4f4;
-$color-secondary:#ccc;
-
-
+$color-warning: #ffbc00;
+$color-dark: #444;
+$color-light: #f4f4f4;
+$color-secondary: #ccc;
 
 // other variables
-$website-width:1200px;
-$bg-image:url(/dist/img/showcase.jpg);
-
+$website-width: 1200px;
+$bg-image: url(/dist/img/showcase.jpg);
 
 // resets
-body{
-    font-family: 'Dosis' , sans-serif;
-    line-height: 1.6;
-    background: #fff;
+body {
+  font-family: "Dosis", sans-serif;
+  // line-height: 1.6;
+  background: #fff;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-a{
-    text-decoration: none;
-    color: $color-dark;
+a {
+  text-decoration: none;
+  color: $color-dark;
 }
-ul,ol{
-    list-style: none;
+ul,
+ol {
+  list-style: none;
 }
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
-h1,h2,h3,h4{
-    text-transform: uppercase;
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
 }
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
+
+// // text color function
+// @function set-text-color($color){
+//   @if(lightness($color)>50){
+//     @return #333;
+//   }@else{
+//     @return #fff;
+//   }
+// }
