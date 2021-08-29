@@ -38,6 +38,17 @@
       color: $color-light;
     }
   }
+  &-dark {
+    @extend %btn-shared;
+    color: $color-light;
+    background: $color-dark;
+    margin: 20px;
+    &:hover {
+      border: 1px solid $color-dark;
+      background: transparent;
+      color: $color-dark;
+    }
+  }
 }
 // spacing classes
 .container {
@@ -76,25 +87,24 @@
   }
 }
 // background classes
-.bg{
-&-warning{
+.bg {
+  &-warning {
     background: $color-warning;
     color: set-text-color($color-warning);
-}
-&-light{
+  }
+  &-light {
     background: $color-light;
     color: set-text-color($color-light);
-}
-&-dark{
+  }
+  &-dark {
     background: $color-dark;
     color: set-text-color($color-dark);
-}
-&-secondary{
+  }
+  &-secondary {
     background: $color-secondary;
     color: set-text-color($color-secondary);
+  }
 }
-}
-
 
 // text classes
 .text-center {
